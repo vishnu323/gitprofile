@@ -44,39 +44,55 @@ class MainData extends Component {
     }
     render() {
         return (
-            <div className="user-details">
-                <div className="user-top-left">
-               <span id="user-name"> {this.props.name}</span><br/>
-               <span id="user-des">
-               {this.props.des} </span><br/>
-                </div>
-                <div className="user-top-right">
-                    <button id="change-color">&#9733;{this.state.val}</button>
-                </div>
-                <br/><br/>
-                <div className="user-bottom-left">
-                
-                    
-                    
+        <div className="user-details">
+            <div className="user-top-left">
 
-                </div>
-                <div className="user-bottom-right">
-                <span className="bottom-header">
-                    <span>
-                &#127860; &nbsp;{this.props.language}
+               <span id="user-name"> {this.props.name}</span><br/>
+               
+               {this.props.des!==null?<span id="user-des">{this.props.des} <br/></span>
+              :null} 
+
+               <span className="bottom-header">
+                <span>
+                    {this.props.language!==null?
+                <span>
+                    <span id="circle-data"></span>
+                    &nbsp;
+
+                    { this.props.language}&nbsp;&nbsp;&nbsp;&nbsp;
+                </span>:null
+                    }
                 </span>
                 <span id="head1">
-                &#127760;&nbsp;Issues:{this.props.iss}
+                
+                {this.props.star!==0?<span>&#9733; {this.props.star} </span>:null}
                 </span>
+                {
+                this.props.license!==null?<span>&#9878;&nbsp;{this.props.license.name}
+                &nbsp;&nbsp;&nbsp;&nbsp;</span>:null
+                }
                 <span id="head2">
                    
-                &#127948;&nbsp;Updated on &nbsp;&nbsp;
+               Updated on &nbsp;&nbsp;
                 {this.data(this.props.update)}
                 </span>
                 </span>
                     
 
+               
+                  
+            </div>
+               
+                <div className="user-bottom-left">
+                
+                <button>&#9733;star</button>
+                <br/>
+                
+                    
+                    
+
                 </div>
+               
                     
                 
             </div>

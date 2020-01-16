@@ -55,7 +55,8 @@ class Fetch extends Component {
                
                      
               return <MainData name={pos.name} des={pos.description} language={pos.language}
-                iss={pos.private} update={pos.pushed_at}/>
+                iss={pos.private} update={pos.pushed_at}
+                star={pos.stargazers_count} license={pos.license}/>
                   }
                 }
             
@@ -63,7 +64,7 @@ class Fetch extends Component {
 
             :
             post.filter(item => {
-                return (this.props.selectVal === "ALL" ||
+                return (this.props.selectVal === "All" ||
               
                 (item.language && item.language.toLowerCase().indexOf(this.props.selectVal.toLowerCase()) != -1))}
             ).map( pos =>
@@ -72,7 +73,8 @@ class Fetch extends Component {
        
              
       return <MainData name={pos.name} des={pos.description} language={pos.language}
-        iss={pos.private} update={pos.pushed_at}/>
+        iss={pos.private} update={pos.pushed_at} 
+        star={pos.stargazers_count} license={pos.license}/>
           }
         }
     
