@@ -376,6 +376,10 @@
         .nav-bar{
             width:100%;
             margin-top:2vw;
+            @media screen and (max-width:780px){
+                margin-top:-7vh;
+            }
+
             
             
             ul{
@@ -426,6 +430,10 @@
                 grid-column-gap:2vw;
 
                 .top{
+                    input:focus {
+                        outline: none; 
+                        border: 1px solid blue;
+                      }
                     .filt{
                         width:38vw;
                         min-height: 18px;
@@ -484,7 +492,7 @@
                            
                             z-index:3;
                             position:absolute;
-                            left:-175px;
+                            left:-148px;
                             top:40px;
                             width:300px;
                             background-color: #fff;
@@ -658,7 +666,7 @@
                    
                     @media screen and (max-width:780px){
                         font-size:3vw;
-                        margin-top:1vh;
+                      
                     }
                     
                     

@@ -31,8 +31,10 @@ class LeftSide extends Component {
                     <span className="front-end-developer">
                     {this.props.bio}
                     <br/><br/>
+                
+
                     &#128101; &nbsp;&nbsp;{this.props.company}<br/><br/>
-                    &#127760; &nbsp;&nbsp;&nbsp;&nbsp;{this.props.location}<br/><br/>
+                    &#127760; &nbsp;&nbsp;&nbsp;{this.props.location}<br/><br/>
                     &#9993;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span id="smail">
                     supreetsingh.247@gmail.com</span>
                     <br/><br/><span id="sub">block or report user</span>

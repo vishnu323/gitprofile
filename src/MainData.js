@@ -11,7 +11,7 @@ class MainData extends Component {
     data(val){
         let check=val.split(':')
         let sub=check[0].split('-')
-        let dateval=''
+      
         let month=''
         if(sub[1]==1)
             month='Jan'
